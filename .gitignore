@@ -12,10 +12,10 @@ venv/
 env/
 .venv/
 # IDE
-  .vscode/
-  .idea/
-  *.swp
-  .DS_Store
+.vscode/
+.idea/
+*.swp
+.DS_Store
 
-  # Logs
-  *.log
+# Logs
+*.log
