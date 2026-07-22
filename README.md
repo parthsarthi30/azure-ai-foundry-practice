@@ -1,8 +1,7 @@
 # Azure AI Foundry Practice
 
 A practice exercise for provisioning an **Azure AI Foundry** workspace and making
-a first call to a deployed chat model from Python. Built as part of the
-**Enterprise Agents 2026** learning track.
+a first call to a deployed chat model from Python.
 
 ---
 
