@@ -88,28 +88,6 @@ The exact reply and token counts will vary per run.
 
 ---
 
-## Resource mapping (from the exercise)
-
-| Exercise step                       | Resource                                                                                     |
-| ----------------------------------- | -------------------------------------------------------------------------------------------- |
-| Step 2 — Hub                        | `ent-agent-2026-hub`                                                                         |
-| Step 3 — Project                    | `ent-agent-<yourname>`                                                                       |
-| Step 4 — Chat model deployment      | A chat completion deployment (the script targets the deployment name configured in `app.py`) |
-| Step 5 — Embedding model deployment | `text-embedding-3-small` (provisioned for future RAG work)                                   |
-
-> 📝 **Note on the chat model:** the original exercise calls for **GPT-4o** as
-> a `Standard` deployment. The current `app.py` is wired to **`gpt-5-mini`**
-> (`reasoning_effort="minimal"`), which is what was actually deployed in this
-> workspace. To switch back to GPT-4o, deploy it in the Model Catalog and
-> change the `model=` argument in `app.py` to match the new deployment name.
->
-> 📝 **Note on the env var name:** the exercise spec uses
-> `AZURE_OPENAI_KEY`, while the script reads `AZURE_OPENAI_API_KEY`. The
-> `.env.example` and the script agree; if you need to match the spec
-> literally, rename the variable in both places.
-
----
-
 ## Cost / token tracking
 
 The script prints `prompt_tokens`, `completion_tokens`, and `total_tokens` on
